@@ -1,0 +1,411 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\projects\\KickTime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|d:\\projects\\kicktime\\src\\kicktime.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|solutionrelative:src\\kicktime.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|d:\\projects\\kicktime\\src\\kicktime.api\\kicktime.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|solutionrelative:src\\kicktime.api\\kicktime.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|d:\\projects\\kicktime\\src\\kicktime.api\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|solutionrelative:src\\kicktime.api\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|d:\\projects\\kicktime\\src\\kicktime.api\\configuration\\swaggerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|solutionrelative:src\\kicktime.api\\configuration\\swaggerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|d:\\projects\\kicktime\\src\\kicktime.api\\configuration\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|solutionrelative:src\\kicktime.api\\configuration\\jwtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|d:\\projects\\kicktime\\src\\kicktime.api\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2AF11F-6429-332A-4AD5-184779C0B5E6}|src\\KickTime.API\\KickTime.API.csproj|solutionrelative:src\\kicktime.api\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|d:\\projects\\kicktime\\src\\kicktime.infrastructure\\database\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|solutionrelative:src\\kicktime.infrastructure\\database\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|d:\\projects\\kicktime\\src\\kicktime.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|solutionrelative:src\\kicktime.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|d:\\projects\\kicktime\\src\\kicktime.infrastructure\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|solutionrelative:src\\kicktime.infrastructure\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|d:\\projects\\kicktime\\src\\kicktime.infrastructure\\kicktime.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EDA78EBB-923E-236F-8A43-6EB7B5EC429B}|src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj|solutionrelative:src\\kicktime.infrastructure\\kicktime.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|d:\\projects\\kicktime\\src\\kicktime.application\\validators\\loginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|solutionrelative:src\\kicktime.application\\validators\\loginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|d:\\projects\\kicktime\\src\\kicktime.application\\validators\\registervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|solutionrelative:src\\kicktime.application\\validators\\registervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|d:\\projects\\kicktime\\src\\kicktime.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|solutionrelative:src\\kicktime.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|d:\\projects\\kicktime\\src\\kicktime.application\\kicktime.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|solutionrelative:src\\kicktime.application\\kicktime.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|d:\\projects\\kicktime\\src\\kicktime.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4C2B02-DAFE-3448-8C2E-501034B83B59}|src\\KickTime.Application\\KickTime.Application.csproj|solutionrelative:src\\kicktime.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\kicktime.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\kicktime.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\enum\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\enum\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\dtos\\auth\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\dtos\\auth\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\dtos\\auth\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\dtos\\auth\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\dtos\\auth\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\dtos\\auth\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\dtos\\auth\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\dtos\\auth\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\dtos\\auth\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\dtos\\auth\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|d:\\projects\\kicktime\\src\\kicktime.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9F563A-D405-C24A-414E-5D63F5A8DD45}|src\\KickTime.Core\\KickTime.Core.csproj|solutionrelative:src\\kicktime.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.API\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.API\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.API\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "src\\KickTime.API\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:33:12.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.API\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.API\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.API\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "src\\KickTime.API\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:32:24.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SwaggerConfiguration.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.API\\Configuration\\SwaggerConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.API\\Configuration\\SwaggerConfiguration.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.API\\Configuration\\SwaggerConfiguration.cs",
+              "RelativeToolTip": "src\\KickTime.API\\Configuration\\SwaggerConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:31:45.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtConfiguration.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.API\\Configuration\\JwtConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.API\\Configuration\\JwtConfiguration.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.API\\Configuration\\JwtConfiguration.cs",
+              "RelativeToolTip": "src\\KickTime.API\\Configuration\\JwtConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:31:36.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KickTime.API",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj",
+              "RelativeDocumentMoniker": "src\\KickTime.API\\KickTime.API.csproj",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj",
+              "RelativeToolTip": "src\\KickTime.API\\KickTime.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-05T06:30:32.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.API\\Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.API\\Controller\\AuthController.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.API\\Controller\\AuthController.cs",
+              "RelativeToolTip": "src\\KickTime.API\\Controller\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:31:06.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbConnectionFactory.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "RelativeToolTip": "src\\KickTime.Infrastructure\\Database\\DbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:30:15.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "src\\KickTime.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:29:59.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Infrastructure\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "src\\KickTime.Infrastructure\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:29:39.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KickTime.Infrastructure",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
+              "RelativeToolTip": "src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-05T06:28:15.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginValidator.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Application\\Validators\\LoginValidator.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Application\\Validators\\LoginValidator.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Application\\Validators\\LoginValidator.cs",
+              "RelativeToolTip": "src\\KickTime.Application\\Validators\\LoginValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:28:02.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterValidator.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Application\\Validators\\RegisterValidator.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Application\\Validators\\RegisterValidator.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Application\\Validators\\RegisterValidator.cs",
+              "RelativeToolTip": "src\\KickTime.Application\\Validators\\RegisterValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:27:29.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Application\\Services\\AuthService.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\KickTime.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:27:16.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "src\\KickTime.Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:26:53.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KickTime.Application",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj",
+              "RelativeDocumentMoniker": "src\\KickTime.Application\\KickTime.Application.csproj",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj",
+              "RelativeToolTip": "src\\KickTime.Application\\KickTime.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-05T06:25:09.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\Enum\\UserRole.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\Enum\\UserRole.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\Enum\\UserRole.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\Enum\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:24:06.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserProfileResponse.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\UserProfileResponse.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\DTOs\\Auth\\UserProfileResponse.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\UserProfileResponse.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\DTOs\\Auth\\UserProfileResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:23:25.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\DTOs\\Auth\\LoginResponse.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\LoginResponse.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\DTOs\\Auth\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:23:12.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\DTOs\\Auth\\LoginRequest.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\LoginRequest.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\DTOs\\Auth\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:22:59.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "KickTime.Core",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\KickTime.Core.csproj",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj",
+              "RelativeToolTip": "src\\KickTime.Core\\KickTime.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-05T06:21:03.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterResponse.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\RegisterResponse.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\DTOs\\Auth\\RegisterResponse.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\RegisterResponse.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\DTOs\\Auth\\RegisterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:22:47.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\DTOs\\Auth\\RegisterRequest.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\DTOs\\Auth\\RegisterRequest.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\DTOs\\Auth\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:22:34.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\projects\\KickTime\\src\\KickTime.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "src\\KickTime.Core\\Entities\\User.cs",
+              "ToolTip": "D:\\projects\\KickTime\\src\\KickTime.Core\\Entities\\User.cs",
+              "RelativeToolTip": "src\\KickTime.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:21:56.98Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

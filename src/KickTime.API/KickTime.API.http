@@ -1,0 +1,6 @@
+@KickTime.API_HostAddress = http://localhost:5130
+
+GET {{KickTime.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
