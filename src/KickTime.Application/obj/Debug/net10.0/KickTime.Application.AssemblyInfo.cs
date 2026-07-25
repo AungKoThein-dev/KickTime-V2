@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KickTime.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b0499e2e45d04cf24deabd0d0d3d551932fb3e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("KickTime.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KickTime.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

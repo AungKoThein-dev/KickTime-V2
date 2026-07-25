@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KickTime.Infrastructure.Database
+namespace KickTime.Infrastructure.Repositories
 {
-    internal class DbConnectionFactory
+    internal class RoleRepository
     {
     }
 }
