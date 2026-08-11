@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KickTime.Infrastructure.Repositories
+namespace KickTime.Core.Exceptions
 {
-    internal class UserRepository
+    internal class UnauthorizedException
     {
     }
 }

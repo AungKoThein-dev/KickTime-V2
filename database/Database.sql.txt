@@ -1,0 +1,5 @@
+CREATE DATABASE KickTime;
+GO
+
+USE KickTime;
+GO

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KickTime.Application.Services
+namespace KickTime.Core.Exceptions
 {
-    internal class AuthService
+    internal class NotFoundException
     {
     }
 }

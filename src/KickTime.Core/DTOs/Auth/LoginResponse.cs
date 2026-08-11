@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace KickTime.Core.DTOs.Auth;
 
-namespace KickTime.Core.DTOs.Auth
+public class LoginResponse
 {
-    internal class LoginResponse
-    {
-    }
+    public string Token { get; set; } = string.Empty;
+
+    public DateTime Expiration { get; set; }
 }

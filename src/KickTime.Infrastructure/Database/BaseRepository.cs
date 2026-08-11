@@ -1,8 +1,7 @@
-﻿using KickTime.Infrastructure.Database;
-using System.Data;
+﻿using System.Data;
 using System.Data.Common;
 
-namespace KickTime.Infrastructure.Repositories;
+namespace KickTime.Infrastructure.Database;
 
 public abstract class BaseRepository
 {
@@ -13,13 +12,13 @@ public abstract class BaseRepository
         _connectionFactory = connectionFactory;
     }
 
-    protected async Task<DbConnection> GetOpenConnectionAsync()
+    protected async Task<DbConnection> GetOpenConnectionAsync(CancellationToken cancellationToken)
     {
         var connection = _connectionFactory.CreateConnection();
 
         if (connection.State != ConnectionState.Open)
         {
-            await connection.OpenAsync();
+            await connection.OpenAsync(cancellationToken);
         }
 
         return connection;

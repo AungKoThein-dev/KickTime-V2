@@ -1,4 +1,8 @@
-﻿using KickTime.Infrastructure.Database;
+﻿using KickTime.Application.Authentication.Interfaces;
+using KickTime.Infrastructure.Authentication.Repositories;
+using KickTime.Infrastructure.Authentication.Security;
+using KickTime.Infrastructure.Configuration;
+using KickTime.Infrastructure.Database;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,7 +14,18 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
+        services.Configure<JwtOptions>(
+            configuration.GetSection(JwtOptions.SectionName));
+
         services.AddSingleton<IDbConnectionFactory, SqlServerConnectionFactory>();
+
+        services.AddScoped<IUserRepository, UserRepository>();
+
+        services.AddScoped<IRoleRepository, RoleRepository>();
+
+        services.AddSingleton<IPasswordHasher, BCryptPasswordHasher>();
+
+        services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
         return services;
     }

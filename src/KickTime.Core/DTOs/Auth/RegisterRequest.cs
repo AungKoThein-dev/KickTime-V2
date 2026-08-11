@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace KickTime.Core.DTOs.Auth;
 
-namespace KickTime.Core.DTOs.Auth
+public class RegisterRequest
 {
-    internal class RegisterRequest
-    {
-    }
+    public string Name { get; set; } = string.Empty;
+
+    public string Email { get; set; } = string.Empty;
+
+    public string? Phone { get; set; }
+
+    public string Password { get; set; } = string.Empty;
 }

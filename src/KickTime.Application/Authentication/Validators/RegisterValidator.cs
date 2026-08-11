@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KickTime.Application.Validators
+namespace KickTime.Application.Authentication.Validators
 {
     internal class RegisterValidator
     {

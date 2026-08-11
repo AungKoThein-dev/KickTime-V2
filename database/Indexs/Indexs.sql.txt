@@ -1,0 +1,14 @@
+CREATE UNIQUE INDEX IX_Users_Email
+ON Users(Email);
+
+CREATE INDEX IX_Courts_StadiumId
+ON Courts(StadiumId);
+
+CREATE INDEX IX_Bookings_UserId
+ON Bookings(UserId);
+
+CREATE INDEX IX_Bookings_CourtId
+ON Bookings(CourtId);
+
+CREATE INDEX IX_Bookings_Date
+ON Bookings(BookingDate);

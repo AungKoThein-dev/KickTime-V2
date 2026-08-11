@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace KickTime.Core.DTOs.Auth;
 
-namespace KickTime.Core.DTOs.Auth
+public class RegisterResponse
 {
-    internal class RegisterResponse
-    {
-    }
+    public long UserId { get; set; }
+
+    //public string Message { get; set; } = string.Empty;
 }
