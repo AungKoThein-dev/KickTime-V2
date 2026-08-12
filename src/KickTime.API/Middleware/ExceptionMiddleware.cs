@@ -1,6 +1,7 @@
-﻿using System.Net;
+﻿using KickTime.API.Contracts;
+using KickTime.Application.Exceptions;
+using System.Net;
 using System.Text.Json;
-using KickTime.API.Contracts;
 
 namespace KickTime.API.Middleware;
 
@@ -36,33 +37,46 @@ public sealed class ExceptionMiddleware
     }
 
     private static async Task HandleExceptionAsync(
-        HttpContext context,
-        Exception exception)
+    HttpContext context,
+    Exception exception)
     {
         context.Response.ContentType = "application/json";
 
         var statusCode = exception switch
         {
-            ArgumentException => HttpStatusCode.BadRequest,
+            ValidationException => HttpStatusCode.BadRequest,
 
-            UnauthorizedAccessException => HttpStatusCode.Unauthorized,
+            UnauthorizedException => HttpStatusCode.Unauthorized,
 
-            KeyNotFoundException => HttpStatusCode.NotFound,
+            NotFoundException => HttpStatusCode.NotFound,
 
-            InvalidOperationException => HttpStatusCode.BadRequest,
+            ConflictException => HttpStatusCode.Conflict,
 
             _ => HttpStatusCode.InternalServerError
         };
 
         context.Response.StatusCode = (int)statusCode;
 
+        var message = exception switch
+        {
+            ValidationException => exception.Message,
+
+            UnauthorizedException => exception.Message,
+
+            NotFoundException => exception.Message,
+
+            ConflictException => exception.Message,
+
+            _ => "An unexpected error occurred."
+        };
+
+        var errors = exception is ValidationException validationException
+            ? validationException.Errors
+            : null;
+
         var response = ApiResponse<object>.Fail(
-            exception is InvalidOperationException or
-            ArgumentException or
-            KeyNotFoundException or
-            UnauthorizedAccessException
-                ? exception.Message
-                : "An unexpected error occurred.");
+            message,
+            errors);
 
         await context.Response.WriteAsync(
             JsonSerializer.Serialize(response));

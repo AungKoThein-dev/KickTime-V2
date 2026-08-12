@@ -1,9 +1,6 @@
 ﻿using KickTime.API.Controller;
 using KickTime.Application.Authentication.Interfaces;
-using KickTime.Application.Results;
-using KickTime.Core.Constants;
 using KickTime.Core.DTOs.Auth;
-using KickTime.Core.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
