@@ -1,6 +1,6 @@
 ﻿using KickTime.Application.Authentication.Interfaces;
 using KickTime.Application.Authentication.Mappings;
-using KickTime.Core.Common;
+using KickTime.Application.Results;
 using KickTime.Core.Constants;
 using KickTime.Core.DTOs.Auth;
 using KickTime.Core.Entities;
@@ -39,7 +39,7 @@ namespace KickTime.Application.Authentication.Services
             _logger = logger;
         }
 
-        public async Task<ApiResponse<RegisterResponse>> RegisterAsync(
+        public async Task<Result<RegisterResponse>> RegisterAsync(
         RegisterRequest request,
         CancellationToken cancellationToken)
         {
@@ -47,11 +47,7 @@ namespace KickTime.Application.Authentication.Services
                 request.Email,
                 cancellationToken))
             {
-                return new ApiResponse<RegisterResponse>
-                {
-                    Success = false,
-                    Message = Messages.EmailAlreadyExists
-                };
+                return Result<RegisterResponse>.Conflict(Messages.EmailAlreadyExists);
             }
 
             var role = await _roleRepository.GetByNameAsync(
@@ -60,8 +56,7 @@ namespace KickTime.Application.Authentication.Services
 
             if (role is null)
             {
-                throw new InvalidOperationException(
-                    "User role is not configured.");
+                return Result<RegisterResponse>.NotFound(Messages.RoleNotFound);
             }
 
             var user = new User
@@ -74,26 +69,20 @@ namespace KickTime.Application.Authentication.Services
                 IsActive = true
             };
 
-            user.Id = await _userRepository.CreateAsync(
-                user,
-                cancellationToken);
+            user.Id = await _userRepository.CreateAsync(user, cancellationToken);
 
             _logger.LogInformation(
                 "User {Email} registered successfully.",
                 user.Email);
 
-            return new ApiResponse<RegisterResponse>
+            return Result<RegisterResponse>.Success(new RegisterResponse
             {
-                Success = true,
-                Message = Messages.RegistrationSuccess,
-                Data = new RegisterResponse
-                {
-                    UserId = user.Id
-                }
-            };
+                UserId = user.Id
+               
+            }, Messages.RegistrationSuccess);
         }
 
-        public async Task<ApiResponse<LoginResponse>> LoginAsync(
+        public async Task<Result<LoginResponse>> LoginAsync(
             LoginRequest request,
             CancellationToken cancellationToken)
         {
@@ -101,19 +90,13 @@ namespace KickTime.Application.Authentication.Services
                 request.Email,
                 cancellationToken);
 
-            if (user is null || !_passwordHasher.Verify(
-                request.Password,
-                user.PasswordHash))
+            if (user is null || !_passwordHasher.Verify(request.Password,user.PasswordHash))
             {
                 _logger.LogWarning(
                     "Failed login attempt for {Email}",
                     request.Email);
 
-                return new ApiResponse<LoginResponse>
-                {
-                    Success = false,
-                    Message = Messages.InvalidCredential
-                };
+                return Result<LoginResponse>.Error(Messages.InvalidCredential);
             }
             var role = await _roleRepository.GetByIdAsync(
                 user.RoleId,
@@ -125,11 +108,7 @@ namespace KickTime.Application.Authentication.Services
                 "Role {RoleId} was not found.",
                 user.RoleId);
 
-                return new ApiResponse<LoginResponse>
-                {
-                    Success = false,
-                    Message = Messages.RoleNotFound
-                };
+                return Result<LoginResponse>.NotFound(Messages.RoleNotFound);
             }
 
             var token = _jwtTokenGenerator.GenerateToken(
@@ -140,18 +119,13 @@ namespace KickTime.Application.Authentication.Services
                 "User {Email} logged in successfully.",
                 user.Email);
 
-            return new ApiResponse<LoginResponse>
+            return Result<LoginResponse>.Success(new LoginResponse
             {
-                Success = true,
-                Message = Messages.LoginSuccess,
-                Data = new LoginResponse
-                {
-                    //Token = token
-                }
-            };
+                Token = token
+            }, Messages.LoginSuccess);
         }
 
-        public async Task<ApiResponse<UserProfileResponse>> GetProfileAsync(
+        public async Task<Result<UserProfileResponse>> GetProfileAsync(
             long userId,
             CancellationToken cancellationToken)
         {
@@ -161,15 +135,9 @@ namespace KickTime.Application.Authentication.Services
 
             if (user is null)
             {
-                return new ApiResponse<UserProfileResponse>
-                {
-                    Success = false,
-                    Message = Messages.UserNotFound
-                };
+                return Result<UserProfileResponse>.NotFound(Messages.UserNotFound);
             }
-            var role = await _roleRepository.GetByIdAsync(
-                user.RoleId,
-                cancellationToken);
+            var role = await _roleRepository.GetByIdAsync(user.RoleId, cancellationToken);
 
             if (role is null)
             {
@@ -177,19 +145,10 @@ namespace KickTime.Application.Authentication.Services
                     "Role {RoleId} was not found.",
                     user.RoleId);
 
-                return new ApiResponse<UserProfileResponse>
-                {
-                    Success = false,
-                    Message = Messages.RoleNotFound
-                };
+                return Result<UserProfileResponse>.NotFound(Messages.RoleNotFound);
             }
 
-            return new ApiResponse<UserProfileResponse>
-            {
-                Success = true,
-                Message = Messages.ProfileRetrieved,
-                Data = user.ToProfileResponse(role.Name)
-            };
+            return Result<UserProfileResponse>.Success(user.ToProfileResponse(role.Name), Messages.ProfileRetrieved);
         }
     }
 }
