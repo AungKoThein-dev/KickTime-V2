@@ -1,8 +1,10 @@
 ﻿using KickTime.Application.Authentication.Interfaces;
+using KickTime.Application.Stadium.Interfaces;
 using KickTime.Infrastructure.Authentication.Repositories;
 using KickTime.Infrastructure.Authentication.Security;
 using KickTime.Infrastructure.Configuration;
 using KickTime.Infrastructure.Database;
+using KickTime.Infrastructure.Stadium.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -26,6 +28,8 @@ public static class DependencyInjection
         services.AddSingleton<IPasswordHasher, BCryptPasswordHasher>();
 
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+
+        services.AddScoped<IStadiumRepository, StadiumRepository>();
 
         return services;
     }

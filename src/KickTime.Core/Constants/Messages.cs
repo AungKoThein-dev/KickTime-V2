@@ -3,6 +3,7 @@ namespace KickTime.Core.Constants
 {
     public static class Messages
     {
+        #region Registration and Login Messages
         public const string RegistrationSuccess =
             "Registration successful.";
 
@@ -37,6 +38,20 @@ namespace KickTime.Core.Constants
             "JWT ExpireMinutes must be greater than zero.";
         public const string ConnectionStringNotFound =
             "Connection string 'DefaultConnection' was not found.";
+        #endregion
 
+        #region stadium
+        public const string StadiumNotFound =
+            "Stadium not found.";
+
+        public const string StadiumCreated =
+            "Stadium created successfully.";
+
+        public const string StadiumUpdated =
+            "Stadium updated successfully.";
+
+        public const string StadiumDeleted =
+            "Stadium deleted successfully.";
+        #endregion
     }
 }

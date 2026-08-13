@@ -18,14 +18,4 @@ public static class UserMappings
             Role = roleName
         };
     }
-
-    //public static RegisterResponse ToRegisterResponse(
-    //    this User user)
-    //{
-    //    return new RegisterResponse
-    //    {
-    //        UserId = user.Id,
-    //        Message = "User registered successfully."
-    //    };
-    //}
 }

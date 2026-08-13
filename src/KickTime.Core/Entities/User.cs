@@ -1,6 +1,4 @@
-﻿using System.Data;
-
-namespace KickTime.Core.Entities;
+﻿namespace KickTime.Core.Entities;
 
 public class User : BaseEntity
 {
