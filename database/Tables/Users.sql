@@ -1,0 +1,24 @@
+CREATE TABLE Users
+(
+    Id BIGINT IDENTITY(1,1) PRIMARY KEY,
+
+    RoleId BIGINT NOT NULL,
+
+    Name NVARCHAR(100) NOT NULL,
+
+    Email NVARCHAR(255) NOT NULL UNIQUE,
+	
+    Phone NVARCHAR(20) NOT NULL UNIQUE,
+
+    PasswordHash NVARCHAR(500) NOT NULL,
+	
+	IsActive BIT NOT NULL,
+
+    CreatedAt DATETIME2 NOT NULL DEFAULT GETUTCDATE(),
+
+    UpdatedAt DATETIME2 NULL,
+
+    CONSTRAINT FK_Users_Roles
+        FOREIGN KEY(RoleId)
+        REFERENCES Roles(Id)
+);
