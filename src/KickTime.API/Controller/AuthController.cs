@@ -1,4 +1,5 @@
-﻿using KickTime.Application.Authentication.Interfaces;
+﻿using KickTime.API.Controller;
+using KickTime.Application.Authentication.Interfaces;
 using KickTime.Core.DTOs.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ namespace KickTime.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class AuthController : ControllerBase
+    public class AuthController : BaseController
     {
         private readonly IAuthService _authService;
 
@@ -23,12 +24,7 @@ namespace KickTime.API.Controllers
         {
             var result = await _authService.RegisterAsync(request, cancellationToken);
 
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-
-            return BadRequest(result);
+            return HandleResult(result);
         }
 
         [AllowAnonymous]
@@ -37,12 +33,7 @@ namespace KickTime.API.Controllers
         {
             var result = await _authService.LoginAsync(request, cancellationToken);
 
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-
-            return Unauthorized(result);
+            return HandleResult(result);
         }
 
         [Authorize]
@@ -63,12 +54,7 @@ namespace KickTime.API.Controllers
 
             var result = await _authService.GetProfileAsync(userId, cancellationToken);
 
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-
-            return NotFound(result);
+            return HandleResult(result);
         }
     }
 }

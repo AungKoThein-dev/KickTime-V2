@@ -1,3 +1,4 @@
+using KickTime.API.Extensions;
 using KickTime.Application;
 using KickTime.Infrastructure;
 using KickTime.Infrastructure.Configuration;
@@ -110,6 +111,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseGlobalExceptionHandler();
 
 app.UseAuthentication();
 
