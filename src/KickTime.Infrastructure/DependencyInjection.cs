@@ -1,8 +1,10 @@
 ﻿using KickTime.Application.Authentication.Interfaces;
+using KickTime.Application.Booking.Interfaces;
 using KickTime.Application.Court.Interfaces;
 using KickTime.Application.Stadium.Interfaces;
 using KickTime.Infrastructure.Authentication.Repositories;
 using KickTime.Infrastructure.Authentication.Security;
+using KickTime.Infrastructure.Booking.Repositories;
 using KickTime.Infrastructure.Configuration;
 using KickTime.Infrastructure.Court.Repositories;
 using KickTime.Infrastructure.Database;
@@ -34,6 +36,8 @@ public static class DependencyInjection
         services.AddScoped<IStadiumRepository, StadiumRepository>();
 
         services.AddScoped<ICourtRepository, CourtRepository>();
+
+        services.AddScoped<IBookingRepository, BookingRepository>();
 
         return services;
     }

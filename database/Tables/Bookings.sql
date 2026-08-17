@@ -1,28 +1,29 @@
 CREATE TABLE Bookings
 (
-    Id BIGINT IDENTITY(1,1) PRIMARY KEY,
+    Id BIGINT IDENTITY(1,1) NOT NULL
+        CONSTRAINT PK_Bookings PRIMARY KEY,
 
     UserId BIGINT NOT NULL,
 
     CourtId BIGINT NOT NULL,
 
-    BookingDate DATE NOT NULL,
+    StartTime DATETIME2 NOT NULL,
 
-    StartTime TIME NOT NULL,
+    EndTime DATETIME2 NOT NULL,
 
-    EndTime TIME NOT NULL,
+    IsCancelled BIT NOT NULL
+        CONSTRAINT DF_Bookings_IsCancelled DEFAULT (0),
 
-    Status NVARCHAR(30) NOT NULL,
-
-    CreatedAt DATETIME2 NOT NULL DEFAULT GETUTCDATE(),
+    CreatedAt DATETIME2 NOT NULL
+        CONSTRAINT DF_Bookings_CreatedAt DEFAULT (SYSUTCDATETIME()),
 
     UpdatedAt DATETIME2 NULL,
 
     CONSTRAINT FK_Bookings_Users
-        FOREIGN KEY(UserId)
+        FOREIGN KEY (UserId)
         REFERENCES Users(Id),
 
     CONSTRAINT FK_Bookings_Courts
-        FOREIGN KEY(CourtId)
+        FOREIGN KEY (CourtId)
         REFERENCES Courts(Id)
 );
