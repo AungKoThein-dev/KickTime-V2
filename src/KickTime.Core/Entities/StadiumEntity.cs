@@ -1,6 +1,6 @@
 ﻿namespace KickTime.Core.Entities
 {
-    public class Stadium : BaseEntity
+    public class StadiumEntity : BaseEntity
     {
         public string Name { get; set; } = string.Empty;
 

@@ -1,8 +1,11 @@
+using FluentValidation.AspNetCore;
+using KickTime.API.Configuration;
 using KickTime.API.Extensions;
 using KickTime.Application;
 using KickTime.Infrastructure;
 using KickTime.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Security.Claims;
@@ -13,6 +16,16 @@ var builder = WebApplication.CreateBuilder(args);
 #region Services
 
 builder.Services.AddControllers();
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.InvalidModelStateResponseFactory =
+        context => ValidationResponseFactory.Create(context);
+});
+
+builder.Services.AddFluentValidationAutoValidation();
+
+builder.Services.AddFluentValidationClientsideAdapters();
 
 builder.Services.AddEndpointsApiExplorer();
 

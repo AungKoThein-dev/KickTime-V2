@@ -1,5 +1,5 @@
 ﻿using KickTime.Core.DTOs.Stadium;
-using StadiumEntity = KickTime.Core.Entities.Stadium;
+using StadiumEntity = KickTime.Core.Entities.StadiumEntity;
 
 namespace KickTime.Application.Stadium.Mappings;
 

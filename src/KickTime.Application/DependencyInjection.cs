@@ -1,8 +1,12 @@
-﻿using KickTime.Application.Authentication.Interfaces;
+﻿using FluentValidation;
+using KickTime.Application.Authentication.Interfaces;
 using KickTime.Application.Authentication.Services;
+using KickTime.Application.Court.Interfaces;
+using KickTime.Application.Court.Services;
 using KickTime.Application.Stadium.Interfaces;
 using KickTime.Application.Stadium.Services;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace KickTime.Application;
 
@@ -13,6 +17,9 @@ public static class DependencyInjection
     {
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IStadiumService, StadiumService>();
+        services.AddScoped<ICourtService, CourtService>();
+        services.AddValidatorsFromAssembly(
+            Assembly.GetExecutingAssembly());
         return services;
     }
 }

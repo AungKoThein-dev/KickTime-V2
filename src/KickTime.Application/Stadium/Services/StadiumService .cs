@@ -11,9 +11,7 @@ public sealed class StadiumService : IStadiumService
     private readonly IStadiumRepository _stadiumRepository;
     private readonly ILogger<StadiumService> _logger;
 
-    public StadiumService(
-        IStadiumRepository stadiumRepository,
-        ILogger<StadiumService> logger)
+    public StadiumService(IStadiumRepository stadiumRepository,ILogger<StadiumService> logger)
     {
         _stadiumRepository =
             stadiumRepository
@@ -26,24 +24,6 @@ public sealed class StadiumService : IStadiumService
 
     public async Task<Result<StadiumResponse>> CreateAsync(CreateStadiumRequest request,CancellationToken cancellationToken)
     {
-        if (request is null)
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Request cannot be null.");
-        }
-
-        if (string.IsNullOrWhiteSpace(request.Name))
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Stadium name is required.");
-        }
-
-        if (string.IsNullOrWhiteSpace(request.Location))
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Stadium location is required.");
-        }
-
         var stadium = request.ToEntity();
 
         stadium.Id = await _stadiumRepository.CreateAsync(stadium,cancellationToken);
@@ -60,12 +40,6 @@ public sealed class StadiumService : IStadiumService
 
     public async Task<Result<StadiumResponse>> GetByIdAsync(long id, CancellationToken cancellationToken)
     {
-        if (id <= 0)
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Invalid stadium id.");
-        }
-
         var stadium = await _stadiumRepository.GetByIdAsync(id, cancellationToken);
 
         if (stadium is null)
@@ -92,24 +66,6 @@ public sealed class StadiumService : IStadiumService
 
     public async Task<Result<StadiumResponse>> UpdateAsync(long id,UpdateStadiumRequest request,CancellationToken cancellationToken)
     {
-        if (id <= 0)
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Invalid stadium id.");
-        }
-
-        if (request is null)
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Request cannot be null.");
-        }
-
-        if (string.IsNullOrWhiteSpace(request.Name))
-        {
-            return Result<StadiumResponse>.ValidationFailure(
-                "Stadium name is required.");
-        }
-
         if (string.IsNullOrWhiteSpace(request.Location))
         {
             return Result<StadiumResponse>.ValidationFailure(
@@ -149,12 +105,6 @@ public sealed class StadiumService : IStadiumService
 
     public async Task<Result<bool>> DeleteAsync(long id,CancellationToken cancellationToken)
     {
-        if (id <= 0)
-        {
-            return Result<bool>.ValidationFailure(
-                "Invalid stadium id.");
-        }
-
         var deleted = await _stadiumRepository.DeleteAsync(id, cancellationToken);
 
         if (!deleted)

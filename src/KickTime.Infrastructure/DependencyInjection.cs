@@ -1,8 +1,10 @@
 ﻿using KickTime.Application.Authentication.Interfaces;
+using KickTime.Application.Court.Interfaces;
 using KickTime.Application.Stadium.Interfaces;
 using KickTime.Infrastructure.Authentication.Repositories;
 using KickTime.Infrastructure.Authentication.Security;
 using KickTime.Infrastructure.Configuration;
+using KickTime.Infrastructure.Court.Repositories;
 using KickTime.Infrastructure.Database;
 using KickTime.Infrastructure.Stadium.Repositories;
 using Microsoft.Extensions.Configuration;
@@ -30,6 +32,8 @@ public static class DependencyInjection
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
         services.AddScoped<IStadiumRepository, StadiumRepository>();
+
+        services.AddScoped<ICourtRepository, CourtRepository>();
 
         return services;
     }

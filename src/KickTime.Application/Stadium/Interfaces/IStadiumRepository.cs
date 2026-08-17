@@ -1,4 +1,4 @@
-﻿using StadiumEntity = KickTime.Core.Entities.Stadium;
+﻿using KickTime.Core.Entities;
 namespace KickTime.Application.Stadium.Interfaces;
 
 public interface IStadiumRepository
