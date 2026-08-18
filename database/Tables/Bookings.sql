@@ -1,3 +1,5 @@
+Use KickTime;
+
 CREATE TABLE Bookings
 (
     Id BIGINT IDENTITY(1,1) NOT NULL

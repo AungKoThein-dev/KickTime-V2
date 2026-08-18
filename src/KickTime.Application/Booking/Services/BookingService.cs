@@ -106,6 +106,7 @@ public sealed class BookingService : IBookingService
 
     public async Task<Result<BookingResponse>> GetByIdAsync(
         long id,
+        long userId,
         CancellationToken cancellationToken)
     {
         var booking = await _bookingRepository.GetByIdAsync(
@@ -116,6 +117,12 @@ public sealed class BookingService : IBookingService
         {
             return Result<BookingResponse>.NotFound(
                 "Booking was not found.");
+        }
+
+        if (booking.UserId != userId)
+        {
+            return Result<BookingResponse>.Unauthorized(
+                "You are not allowed to access this booking.");
         }
 
         return Result<BookingResponse>.Success(

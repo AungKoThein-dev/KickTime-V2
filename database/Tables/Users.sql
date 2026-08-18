@@ -1,3 +1,5 @@
+Use KickTime;
+
 CREATE TABLE Users
 (
     Id BIGINT IDENTITY(1,1) PRIMARY KEY,

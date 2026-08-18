@@ -12,6 +12,7 @@ public interface IBookingService
 
     Task<Result<BookingResponse>> GetByIdAsync(
         long id,
+        long userId,
         CancellationToken cancellationToken);
 
     Task<Result<IEnumerable<BookingResponse>>> GetMyBookingsAsync(

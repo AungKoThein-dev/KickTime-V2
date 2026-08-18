@@ -1,3 +1,5 @@
+Use KickTime;
+
 CREATE TABLE Courts
 (
     Id BIGINT IDENTITY(1,1) PRIMARY KEY,

@@ -1,5 +1,7 @@
+Use KickTime;
+
 CREATE TABLE [Stadiums] (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Id BIGINT IDENTITY(1,1) PRIMARY KEY,
     Name NVARCHAR(100) NOT NULL,
     Location NVARCHAR(200) NOT NULL,
     Description NVARCHAR(500) NULL,
