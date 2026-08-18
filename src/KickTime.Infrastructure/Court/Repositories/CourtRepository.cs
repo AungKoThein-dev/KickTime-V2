@@ -48,6 +48,8 @@ public sealed class CourtRepository : BaseRepository, ICourtRepository
             new { Id = id },
             cancellationToken: cancellationToken);
 
+        var temp = await connection.QuerySingleOrDefaultAsync<CourtEntity>(
+            command);
         return await connection.QuerySingleOrDefaultAsync<CourtEntity>(
             command);
     }

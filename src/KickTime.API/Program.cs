@@ -1,7 +1,9 @@
 using FluentValidation.AspNetCore;
 using KickTime.API.Configuration;
 using KickTime.API.Extensions;
+using KickTime.API.Services;
 using KickTime.Application;
+using KickTime.Application.Common.Interfaces;
 using KickTime.Infrastructure;
 using KickTime.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -66,6 +68,10 @@ builder.Services.AddSwaggerGen(options =>
             }
         });
 });
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 
 builder.Services.AddApplication();
 
