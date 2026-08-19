@@ -14,15 +14,15 @@ public sealed class BookingRepository : BaseRepository, IBookingRepository
     {
     }
 
-    public async Task<long> CreateAsync(
-        BookingEntity booking,
-        CancellationToken cancellationToken)
+    public async Task<long?> CreateIfAvailableAsync(
+    BookingEntity booking,
+    CancellationToken cancellationToken)
     {
         using var connection =
             await GetOpenConnectionAsync(cancellationToken);
 
         var command = new CommandDefinition(
-            BookingSql.Create,
+            BookingSql.CreateIfAvailable,
             new
             {
                 booking.UserId,
@@ -32,7 +32,7 @@ public sealed class BookingRepository : BaseRepository, IBookingRepository
             },
             cancellationToken: cancellationToken);
 
-        return await connection.ExecuteScalarAsync<long>(command);
+        return await connection.ExecuteScalarAsync<long?>(command);
     }
 
     public async Task<BookingEntity?> GetByIdAsync(

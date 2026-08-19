@@ -4,9 +4,9 @@ namespace KickTime.Application.Booking.Interfaces;
 
 public interface IBookingRepository
 {
-    Task<long> CreateAsync(
-        BookingEntity booking,
-        CancellationToken cancellationToken);
+    Task<long?> CreateIfAvailableAsync(
+    BookingEntity booking,
+    CancellationToken cancellationToken);
 
     Task<BookingEntity?> GetByIdAsync(
         long id,

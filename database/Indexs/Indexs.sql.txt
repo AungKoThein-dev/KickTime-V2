@@ -15,3 +15,7 @@ ON Bookings(BookingDate);
 
 CREATE INDEX IX_Bookings_CourtId_StartTime
 ON Bookings(CourtId, StartTime);
+
+CREATE INDEX IX_Bookings_Court_Time
+ON Bookings (CourtId, StartTime, EndTime)
+INCLUDE (IsCancelled);
