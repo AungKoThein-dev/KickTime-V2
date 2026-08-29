@@ -6,4 +6,7 @@
     <Project Path="src/KickTime.Infrastructure/KickTime.Infrastructure.csproj" />
     <Project Path="src/KickTime.Tests/KickTime.Tests.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/KickTime.API.IntegrationTests/KickTime.API.IntegrationTests.csproj" />
+  </Folder>
 </Solution>

@@ -1,4 +1,4 @@
-Use KickTime;
+Use KickTimeTest;
 
 CREATE TABLE Courts
 (

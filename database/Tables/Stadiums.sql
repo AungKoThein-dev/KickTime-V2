@@ -1,4 +1,4 @@
-Use KickTime;
+Use KickTimeTest;
 
 CREATE TABLE [Stadiums] (
     Id BIGINT IDENTITY(1,1) PRIMARY KEY,

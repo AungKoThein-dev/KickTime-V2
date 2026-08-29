@@ -143,4 +143,13 @@ app.MapControllers();
 
 #endregion
 
+app.MapGet("/health", () => Results.Ok(new
+{
+    Status = "Healthy"
+}));
+
 app.Run();
+
+public partial class Program
+{
+}
