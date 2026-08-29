@@ -1,9 +1,9 @@
 ﻿using KickTime.API.Controller;
 using KickTime.Application.Authentication.Interfaces;
+using KickTime.Application.Common.Interfaces;
 using KickTime.Core.DTOs.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace KickTime.API.Controllers
 {
@@ -13,14 +13,20 @@ namespace KickTime.API.Controllers
     {
         private readonly IAuthService _authService;
 
-        public AuthController(IAuthService authService)
+        private readonly ICurrentUserService _currentUserService;
+
+
+        public AuthController(IAuthService authService, ICurrentUserService currentUserService)
         {
             _authService = authService ?? throw new ArgumentNullException(nameof(authService));
+            _currentUserService = currentUserService ?? throw new ArgumentNullException(nameof(currentUserService));
         }
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> Register(
+            [FromBody] RegisterRequest request,
+            CancellationToken cancellationToken)
         {
             var result = await _authService.RegisterAsync(request, cancellationToken);
 
@@ -29,7 +35,9 @@ namespace KickTime.API.Controllers
 
         [AllowAnonymous]
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> Login(
+            [FromBody] LoginRequest request,
+            CancellationToken cancellationToken)
         {
             var result = await _authService.LoginAsync(request, cancellationToken);
 
@@ -38,21 +46,17 @@ namespace KickTime.API.Controllers
 
         [Authorize]
         [HttpGet("profile")]
-        public async Task<IActionResult> GetProfile(CancellationToken cancellationToken)
+        public async Task<IActionResult> GetProfile(
+            CancellationToken cancellationToken)
         {
-            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userId = _currentUserService.UserId;
 
-            if (string.IsNullOrWhiteSpace(userIdClaim))
+            if (userId is null)
             {
-                return Unauthorized(new { Message = "User id claim is missing." });
+                return Unauthorized("User id claim is missing.");
             }
 
-            if (!long.TryParse(userIdClaim, out var userId))
-            {
-                return BadRequest(new { Message = "Invalid user id format. Expected integer." });
-            }
-
-            var result = await _authService.GetProfileAsync(userId, cancellationToken);
+            var result = await _authService.GetProfileAsync((long)userId, cancellationToken);
 
             return HandleResult(result);
         }

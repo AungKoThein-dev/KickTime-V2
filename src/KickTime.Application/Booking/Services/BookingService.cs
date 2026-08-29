@@ -75,23 +75,20 @@ public sealed class BookingService : IBookingService
                 "Start time must be earlier than end time.");
         }
 
-        var hasOverlap = await _bookingRepository.HasOverlapAsync(
-            request.CourtId,
-            request.StartTime,
-            request.EndTime,
-            cancellationToken);
+        var booking = request.ToEntity(userId);
 
-        if (hasOverlap)
+        var bookingId =
+            await _bookingRepository.CreateIfAvailableAsync(
+                booking,
+                cancellationToken);
+
+        if (bookingId is null)
         {
             return Result<BookingResponse>.Conflict(
                 "The selected court is already booked for the requested time.");
         }
 
-        var booking = request.ToEntity(userId);
-
-        booking.Id = await _bookingRepository.CreateAsync(
-            booking,
-            cancellationToken);
+        booking.Id = bookingId.Value;
 
         _logger.LogInformation(
             "Booking {BookingId} created successfully for User {UserId} and Court {CourtId}.",
