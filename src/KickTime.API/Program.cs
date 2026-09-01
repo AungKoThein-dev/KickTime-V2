@@ -126,9 +126,16 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
+    app.UseSwagger(c =>
+    {
+        c.OpenApiVersion = Microsoft.OpenApi.OpenApiSpecVersion.OpenApi2_0;
+    });
 
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        // EXPLICITLY define the path to prevent Docker routing issues
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "KickTime API v1");
+    });
 }
 
 app.UseHttpsRedirection();
