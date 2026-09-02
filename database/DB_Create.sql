@@ -1,5 +1,5 @@
-CREATE DATABASE KickTimeTest;
+CREATE DATABASE KickTime;
 GO
 
-USE KickTimeTest;
+USE KickTime;
 GO

@@ -2,10 +2,10 @@
 
 SETLOCAL
 
-SET DB_NAME=KickTimeTest
-SET SERVER_NAME=(localdb)\MSSQLLocalDB
-SET USERNAME=root
-SET PASSWORD=Superm@n01
+SET DB_NAME=KickTime
+SET SERVER_NAME=localhost,1433
+SET USERNAME=sa
+SET PASSWORD=KickTime@12345
 
 @ECHO --------------------------------------------
 @ECHO Database Initialize.

@@ -1,4 +1,4 @@
-Use KickTimeTest;
+Use KickTime;
 
 CREATE TABLE Roles
 (
