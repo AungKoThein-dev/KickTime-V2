@@ -1,23 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\KickTime\\src\\KickTime.Tests\\KickTime.Tests.csproj": {}
+    "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Tests\\KickTime.Tests.csproj": {}
   },
   "projects": {
-    "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj": {
+    "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.API\\KickTime.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj",
+        "projectUniqueName": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.API\\KickTime.API.csproj",
         "projectName": "KickTime.API",
-        "projectPath": "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\KickTime\\src\\KickTime.API\\obj\\",
+        "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.API\\KickTime.API.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,21 +32,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj"
               },
-              "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj"
               },
-              "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj"
               }
             }
           }
@@ -55,11 +63,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "FluentValidation.AspNetCore": {
@@ -98,24 +105,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj": {
+    "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj",
+        "projectUniqueName": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj",
         "projectName": "KickTime.Application",
-        "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\KickTime\\src\\KickTime.Application\\obj\\",
+        "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -124,15 +137,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj"
               }
             }
           }
@@ -147,11 +162,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "BCrypt.Net-Next": {
@@ -183,24 +197,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj": {
+    "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj",
+        "projectUniqueName": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj",
         "projectName": "KickTime.Core",
-        "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\KickTime\\src\\KickTime.Core\\obj\\",
+        "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -209,11 +229,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -228,11 +250,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -250,24 +271,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj": {
+    "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
+        "projectUniqueName": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
         "projectName": "KickTime.Infrastructure",
-        "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\obj\\",
+        "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -276,18 +303,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj"
               },
-              "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj"
               }
             }
           }
@@ -302,11 +331,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "BCrypt.Net-Next": {
@@ -354,24 +382,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\KickTime\\src\\KickTime.Tests\\KickTime.Tests.csproj": {
+    "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Tests\\KickTime.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\KickTime\\src\\KickTime.Tests\\KickTime.Tests.csproj",
+        "projectUniqueName": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Tests\\KickTime.Tests.csproj",
         "projectName": "KickTime.Tests",
-        "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Tests\\KickTime.Tests.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\KickTime\\src\\KickTime.Tests\\obj\\",
+        "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Tests\\KickTime.Tests.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -380,24 +414,26 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.API\\KickTime.API.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.API\\KickTime.API.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.API\\KickTime.API.csproj"
               },
-              "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Application\\KickTime.Application.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Application\\KickTime.Application.csproj"
               },
-              "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Core\\KickTime.Core.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Core\\KickTime.Core.csproj"
               },
-              "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj": {
-                "projectPath": "D:\\projects\\KickTime\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj"
+              "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj": {
+                "projectPath": "E:\\MyWorkPlace\\KickTime-V2\\KickTime-V2\\src\\KickTime.Infrastructure\\KickTime.Infrastructure.csproj"
               }
             }
           }
@@ -412,11 +448,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "FluentAssertions": {
@@ -460,7 +495,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

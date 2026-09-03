@@ -11,6 +11,13 @@
     volumes:
       - sqlserver-data:/var/opt/mssql
 
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'KickTime@12345' -C -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
   api:
     build:
       context: .
@@ -21,6 +28,9 @@
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=KickTime;User Id=sa;Password=KickTime@12345;TrustServerCertificate=True;"
-
+      
+    depends_on:
+      sqlserver:
+        condition: service_healthy
 volumes:
   sqlserver-data:
