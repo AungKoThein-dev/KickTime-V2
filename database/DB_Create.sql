@@ -1,5 +1,5 @@
-CREATE DATABASE KickTime;
+USE [master]
 GO
 
-USE KickTime;
+CREATE DATABASE [$(dbName)]
 GO

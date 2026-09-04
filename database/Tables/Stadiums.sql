@@ -1,4 +1,14 @@
-Use KickTime;
+USE [$(dbName)]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Stadiums') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE Stadiums
+GO
 
 CREATE TABLE [Stadiums] (
     Id BIGINT IDENTITY(1,1) PRIMARY KEY,
@@ -8,3 +18,5 @@ CREATE TABLE [Stadiums] (
     CreatedAt DATETIME2 NOT NULL DEFAULT GETDATE(),
     UpdatedAt DATETIME2 NULL
 );
+
+GO

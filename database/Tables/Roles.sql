@@ -1,4 +1,14 @@
-Use KickTime;
+USE [$(dbName)]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Roles') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE Roles
+GO
 
 CREATE TABLE Roles
 (
@@ -12,3 +22,5 @@ CREATE TABLE Roles
 
     UpdatedAt DATETIME2 NULL
 );
+
+GO

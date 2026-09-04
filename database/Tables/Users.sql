@@ -1,4 +1,14 @@
-Use KickTime;
+USE [$(dbName)]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Users') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE Users
+GO
 
 CREATE TABLE Users
 (
@@ -24,3 +34,5 @@ CREATE TABLE Users
         FOREIGN KEY(RoleId)
         REFERENCES Roles(Id)
 );
+
+GO

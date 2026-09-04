@@ -1,4 +1,14 @@
-Use KickTime;
+USE [$(dbName)]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Bookings') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE Bookings
+GO
 
 CREATE TABLE Bookings
 (
@@ -29,3 +39,5 @@ CREATE TABLE Bookings
         FOREIGN KEY (CourtId)
         REFERENCES Courts(Id)
 );
+
+GO
