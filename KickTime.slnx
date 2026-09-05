@@ -3,8 +3,11 @@
     <Project Path="src/KickTime.API/KickTime.API.csproj" />
     <Project Path="src/KickTime.Application/KickTime.Application.csproj" />
     <Project Path="src/KickTime.Core/KickTime.Core.csproj" />
+    <Project Path="src/KickTime.Database/KickTime.Database.sqlproj" Id="f01072c5-c4b8-478f-855b-47b628b81a44">
+      <Build />
+      <Deploy />
+    </Project>
     <Project Path="src/KickTime.Infrastructure/KickTime.Infrastructure.csproj" />
-    <Project Path="src/KickTime.Tests/KickTime.Tests.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/KickTime.API.IntegrationTests/KickTime.API.IntegrationTests.csproj" />
