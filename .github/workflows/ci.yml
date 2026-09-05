@@ -11,12 +11,11 @@ on:
       - main
 
 jobs:
-  build-and-test:
 
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout source code
         uses: actions/checkout@v4
 
@@ -33,3 +32,20 @@ jobs:
 
       - name: Test
         run: dotnet test --no-build --configuration Release
+
+
+  build-database:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build Database Project
+        run: |
+          msbuild src/KickTime.Database/KickTime.Database.sqlproj `
+            /p:Configuration=Release `
+            /p:Platform="Any CPU"
