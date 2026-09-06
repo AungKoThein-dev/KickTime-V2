@@ -34,20 +34,30 @@ jobs:
 
 
       # ============================================
-      # 3. Build Docker Image
+      # 3. Define image name and tags
+      # ============================================
+      - name: Set image tags
+        run: |
+          echo "IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/kicktime-api" >> $GITHUB_ENV
+          echo "IMAGE_TAG=${{ github.sha }}" >> $GITHUB_ENV
+              
+              
+      # ============================================
+      # 4. Build Docker image
       # ============================================
       - name: Build Docker image
         run: |
           docker build \
             -f src/KickTime.API/Dockerfile \
-            -t ghcr.io/${{ github.repository_owner }}/kicktime-api:latest \
+            -t $IMAGE_NAME:latest \
+            -t $IMAGE_NAME:$IMAGE_TAG \
             .
-
-
+              
+              
       # ============================================
-      # 4. Push Docker Image
+      # 5. Push Docker images
       # ============================================
-      - name: Push Docker image
+      - name: Push Docker images
         run: |
-          docker push \
-            ghcr.io/${{ github.repository_owner }}/kicktime-api:latest
+          docker push $IMAGE_NAME:latest
+          docker push $IMAGE_NAME:$IMAGE_TAG
