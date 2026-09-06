@@ -58,11 +58,17 @@ jobs:
             /p:Configuration=Release `
             /p:Platform="Any CPU"
 
+      - name: Find DACPAC
+        shell: pwsh
+        run: |
+          Get-ChildItem -Path . -Recurse -Filter *.dacpac
+
       - name: Upload DACPAC
         uses: actions/upload-artifact@v4
         with:
           name: kicktime-database
-          path: src/KickTime.Database/bin/Release/KickTime.Database.dacpac
+          path: "**/*.dacpac"
+          if-no-files-found: error
 
 
   # ============================================
