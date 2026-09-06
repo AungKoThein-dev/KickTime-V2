@@ -23,6 +23,8 @@ public sealed class CustomWebApplicationFactory
                     testConfigurationPath,
                     optional: false,
                     reloadOnChange: false);
+
+                configuration.AddEnvironmentVariables();
             });
     }
 }
